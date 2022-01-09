@@ -281,16 +281,16 @@ main {
 @media (min-width: 1200px) {
     main {
         flex-direction: row;
-        margin: 150px;
+        margin: 140px;
     }
 
     .left-content {
-        flex-basis: 78%;
+        flex-basis: 77%;
         margin-right: 10px;
     }
 
     .right-content {
-        flex-basis: 22%;
+        flex-basis: 23%;
     }
 
     .top-content {
@@ -303,11 +303,15 @@ main {
     }
 
     .daniel, .patrick {
-        flex-basis: 70%;
+        flex-basis: 69%;
     }
 
     .jonathan, .jeanette{
-        flex-basis: 30%;
+        flex-basis: 31%;
+    }
+
+    #jeanetter__profil h1, #patrick__profil h1 {
+        margin-bottom: 25px;
     }
 
     #daniel__profil img, #jonathan__profil img,
