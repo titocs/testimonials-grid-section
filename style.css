@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;500;600&display=swap');
+/* font-family: 'Barlow Semi Condensed', sans-serif; */
+
+:root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    min-height: 10vh;
+	line-height: 1;
+    box-sizing: border-box;
+    background-color: var(--light-grayish-blue);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+main {
+    display: flex;
+    margin: 70px 25px;
+    flex-direction: column;
+}
+
+.top-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    padding: 35px;
+}
+
+.daniel, .jonathan, .jeanette, .patrick, .kira {
+    border-radius: 8px;
+    margin-bottom: 25px;
+    -webkit-box-shadow: 0px 16px 50px -26px #000000; 
+    box-shadow: 0px 16px 50px -26px #000000;
+}
+
+.daniel {
+    background-color: var(--Moderate-violet);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 87% 0%;
+}
+
+.jonathan {
+    background-color: var(--Very-dark-grayish-blue);
+}
+
+.jeanette {
+    background-color: white;
+}
+
+.patrick {
+    background-color: var(--Very-dark-blackish-blue);
+}
+
+.kira {
+    background-color: white;
+}
+
+.profil {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.profil__caption {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* -------------- each of profil ---------- */
+#daniel__profil img {
+    border-radius: 50%;
+    width: 38px;
+    margin-right: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.637);
+}
+
+#daniel__profil > h1, #jonathan__profil h1 {
+    color: white;
+    line-height: 1.3;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+#daniel__profil > p {
+    opacity: 0.3;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+#daniel__profil .profil__caption > h3,
+#jonathan__profil .profil__caption > h3,
+#patrick__profil .profil__caption > h3 {
+    color: white;
+    margin-bottom: 3px;
+}
+
+#daniel__profil .profil__caption > h5 {
+    opacity: 0.5;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 13px;
+}
+
+#daniel__profil > p {
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 1.4;
+    opacity: 0.7;
+}
+
+/* ======= Jonathan ========= */
+
+#jonathan__profil img {
+    border-radius: 50%;
+    width: 38px;
+    margin-right: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.637);
+}
+
+#jonathan__profil > p {
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+#jonathan__profil .profil__caption > h5 {
+    opacity: 0.5;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 13px;
+}
+
+/* ======= Jenaette ====== */
+#jeanette__profil h1 {
+    color: var(--Very-dark-grayish-blue);
+    line-height: 1.3;
+    font-size: 19px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+#jeanette__profil img {
+    border-radius: 50%;
+    width: 38px;
+    margin-right: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.637);
+}
+
+#jeanette__profil > p {
+    color: hsl(0, 0%, 61%);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+#jeanette__profil .profil__caption > h5 {
+    color: hsl(0, 0%, 61%);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/* ========= Patrick ========== */
+#patrick__profil h1 {
+    color: white;
+    line-height: 1.3;
+    font-size: 19px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+#patrick__profil img {
+    border-radius: 50%;
+    width: 38px;
+    margin-right: 15px;
+    border: 1px solid var(--Moderate-violet);
+}
+
+#patrick__profil > p {
+    color: hsl(0, 0%, 61%);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+#patrick__profil .profil__caption > h5 {
+    color: hsl(0, 0%, 61%);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/* ========== Kira ========== */
+#kira__profil h1 {
+    color: var(--Very-dark-blackish-blue);
+    line-height: 1.3;
+    font-size: 19px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+#kira__profil img {
+    border-radius: 50%;
+    width: 38px;
+    margin-right: 15px;
+    border: 1px solid var(--Moderate-violet);
+}
+
+#kira__profil > p {
+    color: hsl(0, 0%, 61%);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+#kira__profil .profil__caption > h5 {
+    color: hsl(0, 0%, 61%);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+@media (min-width: 1200px) {
+    main {
+        flex-direction: row;
+        margin: 150px;
+    }
+
+    .left-content {
+        flex-basis: 78%;
+        margin-right: 10px;
+    }
+
+    .right-content {
+        flex-basis: 22%;
+    }
+
+    .top-content {
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    .bottom-content {
+        flex-direction: row;
+    }
+
+    .daniel, .patrick {
+        flex-basis: 70%;
+    }
+
+    .jonathan, .jeanette{
+        flex-basis: 30%;
+    }
+
+    #daniel__profil img, #jonathan__profil img,
+    #jeanette__profil img, #patrick__profil img,
+    #kira__profil img{
+        width: 38px;
+    }
+
+    .daniel, .jonathan, .jeanette, .patrick, .kira {
+        margin-bottom: 0;
+    }
+
+    .daniel, .jonathan, .jeanette, .patrick {
+        margin-right: 20px;
+    }
+
+    .kira {
+        height: 97%;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
