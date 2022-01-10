@@ -282,6 +282,7 @@ main {
     main {
         flex-direction: row;
         margin: 140px;
+	min-height: 77vh;
     }
 
     .left-content {
